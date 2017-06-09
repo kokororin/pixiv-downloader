@@ -41,5 +41,9 @@
     "pixiv-img": "^0.3.1",
     "promise-series": "^1.0.0",
     "yargs": "^8.0.1"
-  }
+  },
+  "files": [
+    "bin",
+    "lib"
+  ]
 }
