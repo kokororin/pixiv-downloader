@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-const cli = require('../lib/cli.js').default;
+const PixivDownloaderCli = require('../lib/cli.js').default;
 
-const exitCode = cli(process.argv.slice(2));
+const exitCode = new PixivDownloaderCli().entry(process.argv.slice(2));
 
 process.on('exit', () => {
 	process.exit(exitCode);
