@@ -18,14 +18,8 @@ export default class PixivDownloaderCli {
 
 		this.spinner = ora({ color: 'red' });
 		this.pixiv = new PixivAppApi();
-	}
-
-	log() {
-		return console.log;
-	}
-
-	error() {
-		return console.error;
+		this.log = console.log;
+		this.error = console.error;
 	}
 
 	entry(args) {
