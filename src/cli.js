@@ -66,6 +66,7 @@ export default function cli(args) {
 }
 
 function search(tags) {
+	spinner.text = 'Getting search results from pixiv';
 	pixiv.searchIllust(tags).then(json => {
 		handleSearchResults(json);
 	});
@@ -104,6 +105,7 @@ function handleSearchResults(json) {
 	series.run().then(() => {
 		spinner.succeed(`Page ${initialState.page} downloaded successfully`);
 		if (pixiv.hasNext()) {
+			spinner.text = 'Getting search results from pixiv';
 			pixiv.next().then(json => {
 				handleSearchResults(json);
 			});
