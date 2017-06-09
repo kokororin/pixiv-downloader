@@ -63,11 +63,6 @@ function cli(args) {
 		initialState.output = 'pixiv_downloader_output';
 	}
 	initialState.output = path.join(process.cwd(), initialState.output);
-	try {
-		mkdirp.sync(initialState.output);
-	} catch (e) {
-		error(chalk.bold.red('ERROR: Cannot create directory'));
-	}
 
 	if (args._.length > 0) {
 		const tags = args._.join(' ');

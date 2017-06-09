@@ -1,10 +1,11 @@
 {
   "name": "pixiv-downloader",
   "version": "0.1.1",
-  "description": "",
-  "bin": "cli.js",
+  "description": "CLI tool for downloading pixiv search results",
+  "bin": "lib/cli.js",
   "scripts": {
     "build": "babel cli.js --out-dir lib",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
