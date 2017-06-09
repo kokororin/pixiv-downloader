@@ -2,11 +2,13 @@
   "name": "pixiv-downloader",
   "version": "0.1.2",
   "description": "CLI tool for downloading pixiv search results",
-  "bin": "lib/cli.js",
+  "bin": "bin/pixiv-downloader.js",
   "scripts": {
-    "build": "babel cli.js --out-dir lib",
+    "build": "npm run trash && babel src --out-dir lib",
     "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "trash": "trash build stats lib",
+    "watch": "babel src --watch --out-dir lib"
   },
   "repository": {
     "type": "git",
@@ -28,7 +30,8 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-plugin-transform-es2015-parameters": "^6.24.1",
     "babel-plugin-transform-es2015-spread": "^6.22.0",
-    "babel-plugin-transform-strict-mode": "^6.24.1"
+    "babel-plugin-transform-strict-mode": "^6.24.1",
+    "trash-cli": "^1.4.0"
   },
   "dependencies": {
     "chalk": "^1.1.3",
