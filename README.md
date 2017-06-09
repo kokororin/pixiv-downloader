@@ -13,7 +13,7 @@ npm install pixiv-downloader -g
 pixiv-downloader <tag> -o <outputDir>
 ```
 
-If you do not provide a output directory, images will be downloader in `pixiv_downloader_output`.  
+If you do not provide a output directory, images will be downloaded in `pixiv_downloader_output`.  
 It will never stop until you kill the terminal manually or all images have been downloaded.
 
 ## Example
