@@ -1,5 +1,6 @@
 # Pixiv Downloader
 [![npm version](https://badge.fury.io/js/pixiv-downloader.svg)](https://badge.fury.io/js/pixiv-downloader)
+
 CLI tool for downloading pixiv search results
 
 ## Install
