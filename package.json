@@ -1,0 +1,41 @@
+{
+  "name": "pixiv-downloader",
+  "version": "0.1.1",
+  "description": "",
+  "bin": "cli.js",
+  "scripts": {
+    "build": "babel cli.js --out-dir lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokororin/pixiv-downloader.git"
+  },
+  "keywords": [
+    "pixiv"
+  ],
+  "author": "kokororin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kokororin/pixiv-downloader/issues"
+  },
+  "homepage": "https://github.com/kokororin/pixiv-downloader#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-es2015-parameters": "^6.24.1",
+    "babel-plugin-transform-es2015-spread": "^6.22.0",
+    "babel-plugin-transform-strict-mode": "^6.24.1"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "mkdirp": "^0.5.1",
+    "ora": "^1.2.0",
+    "pixiv-app-api": "^0.10.0",
+    "pixiv-img": "^0.3.1",
+    "promise-series": "^1.0.0",
+    "yargs": "^8.0.1"
+  }
+}
